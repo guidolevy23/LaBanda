@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Web, uade , argentina , diseño">
+    <meta name="description" content="este es un sitio web para la materia de diseño y desarrolllo web de uade. ">
+
+    <link rel="shortcut icon" href="https://www.cariverplate.com.ar/images/favicon-16x16.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <title>La Banda</title>
+</head>
+<body>
+    <header >
+            <div class="caja">
+                <img src="./img/favicon-96x96.png" alt="logo River">
+                <h1>LA BANDA</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="somos.html">Somos</a></li>
+                    <li><a href="ideas.html">Historia</a></li>
+                    <li><a href="contacto.html" class="resaltado">Contacto</a></li>
+                </ul>
+            </nav>
+    </header>
+    <section id="vidrieraIndex">
+        <h1>CONTACTO</h1>
+    </section>
+    <section class="formulario">
+        <h3>Contactanos</h3>
+        <p>
+            ¡Gracias por visitar nuestro sitio web dedicado a River Plate! Valoramos tu interés y estamos aquí para responder a tus preguntas, comentarios o cualquier otra consulta que puedas tener. Tu opinión es importante para nosotros, y nos esforzamos por brindarte la mejor experiencia relacionada con el club.
+        </p>
+        <p>
+            Si deseas ponerte en contacto con nosotros, por favor completa la siguiente información de contacto:
+        </p>
+        <form action="envio.php" method="post" class="contacto">
+            <div class="renglon">
+                <div class="label">
+                    <label for="nombre">Nombre y Apellido</label>
+                </div>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre completo">
+            </div>
+            <div class="renglon">
+                <div class="label">
+                    <label for="telefono">Numero de telefono</label>
+                </div>
+                <input type="text" name="telefono" id="telefono" placeholder="Telefono">
+            </div>
+            <div class="renglon">
+                <div class="label">
+                    <label for="dni">DNI</label>
+                </div>
+                <input type="text" name="dni" id="dni" placeholder="DNI">
+            </div>
+            <div class="renglon">
+                <div class="label">
+                    <label for="email">Email</label>
+                </div>
+                <input type="Email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="renglon">
+                <div class="label">
+                    <label for="motivo">Motivo</label>
+                </div>
+                <textarea name="motivo" id="motivo" cols="30" rows="10" placeholder="Escribenos un mensaje"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.275004513702!2d-58.4510574247746!3d-34.5465918544826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb43ae6018ddf%3A0x3d7f60a75bfa308a!2sEstadio%20M%C3%A2s%20Monumental!5e0!3m2!1ses-419!2sar!4v1699384424815!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="info">
+                <p>Telefono: 01147891200</p>
+                <p>Direccion: Av. Pres. Figueroa Alcorta 7597, C1428 CABA</p>
+                <a href="https://www.cariverplate.com.ar/">https://www.cariverplate.com.ar/</a>
+                <p>Estadio de fútbol y recinto de conciertos; sede del club River Plate y de la Copa Mundial de la FIFA de 1978.</p>
+            </div>
+        </div>
+    </section>
+    <section id="newsletter">
+        <div id="text">
+            <h2>Suscríbete a nuestro newsletter</h2>
+            <h4>Para enterarte de todo lo nuevo que pase en el mundo River! </h4>
+            <h4>Rumores de transferencias, remodelaciones, precios, cuotas, venta de entradas y mas!!!</h4>
+        </div>
+        <form action="envio.php" method="get">
+            <input type="email" name="correo" placeholder="Tu Email...">
+            <button type="submit" class="btn">Suscríbete</button>
+        </form>
+    </section>
+    <footer>
+        <div class="foto_info">
+            <img src="./img/favicon-96x96.png" alt="logo River">
+            <div class="info">
+                <h3>Guido Levy</h3>
+                <p>Tecnicatura Universitaria en Desarrollo de Software UADE 2023&copy;</p>
+                <p>Armonia de color: obtuve los colores extrayendolos del escudo de River, obteniendo una gama de rojos, y un color claro y uno oscuro, simil negro.</p>
+                <p>Tipografia utilizada: Barlow</p> 
+            </div>
+        </div>
+        <div class="redes">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img class="red" src="https://res.cloudinary.com/di9meg3xu/image/upload/v1694629058/facebook.png" alt="facebook"></a>
+    
+            <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer"><img class="red2" src="https://res.cloudinary.com/di9meg3xu/image/upload/v1694629360/x.png" alt="twitter"></a>
+    
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="red" src="https://res.cloudinary.com/di9meg3xu/image/upload/v1694629275/instagram.png" alt="instagram"></a>
+
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="red" src="https://res.cloudinary.com/di9meg3xu/image/upload/v1698793894/github_logo.png" alt="github"></a>
+        </div>
+    </footer>
+</body>
+</html>
