@@ -4,7 +4,7 @@ const router = Router();
 
 router.get('/', async (req,res) => {
     try {
-        const images = await PageImage.findAll();// me toma el PageImages como si fuera undefined
+        const images = await PageImage.findAll();
         res.status(200).send(images);
     } catch (error) {
         res.status(404).send(error.message)
