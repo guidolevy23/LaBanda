@@ -1,0 +1,5 @@
+que quiero de la pagina que se pueda hacer??
+- LaBanda
+	- subir fotos de la "vos en la cancha"(hacer un apartado con las fotos y que sea un carrusel, con alguna descripcion y nombre)
+	- sacar los videos y hacer algo un poco mas copado
+	- algo con la venta de entradas
