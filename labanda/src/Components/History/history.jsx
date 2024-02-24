@@ -1,19 +1,18 @@
 import React from "react";
-import './home.css'
-import Matches from "./matches";
 import Footer from "../Footer/footer";
 import Vidriera from "../Vidriera/vidriera";
 import Header from "../Header/header";
 import Newsletter from "../Newsletter/newsletter";
+import Line from "./line";
 
-export default function Home(){
-    const name = {name: "LA BANDA"}
+export default function History(){
+    const name = {name: "HISTORIA"}
     return(
         <>
             <Header/>
             <Vidriera {...name}/>
+            <Line/>
             <Newsletter/>
-            <Matches/>
             <Footer/>
         </>
     )
