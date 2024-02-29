@@ -21,6 +21,10 @@ header{
     align-items: center;
     border-bottom: #D91E1E solid 2px;
 }
+header #cabecera{
+    text-decoration: none;
+    color: aliceblue;
+}
 .caja{
     width: 50%;
     display: flex;
@@ -55,7 +59,7 @@ header li a:hover , .resaltado{
     height: 400px;
     background-size: cover;
     background-position: center;
-    /* background-image: url(./img/bg-tickets.jpg); */
+    background-image: url(https://www.cariverplate.com.ar/images/7-2022/bg-tickets.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +74,7 @@ header li a:hover , .resaltado{
     width: 100%;
     background-size: cover;
     background-position: center;
-    /* background-image: url(./img/bg-tickets.jpg); */
+    background-image: url(https://www.cariverplate.com.ar/images/7-2022/bg-tickets.jpg);
     font-size: 200px;
     opacity: 0%;
     color:#F2F2F2;
