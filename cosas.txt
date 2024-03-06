@@ -3,3 +3,34 @@ que quiero de la pagina que se pueda hacer??
 	- subir fotos de la "vos en la cancha"(hacer un apartado con las fotos y que sea un carrusel, con alguna descripcion y nombre)
 	- sacar los videos y hacer algo un poco mas copado
 	- algo con la venta de entradas
+
+	[
+	{
+		"id_image": 1,
+		"url": "https://www.cariverplate.com.ar/images/favicon-152x152.png",
+		"alt": "Escudo del Club Atletico River Plate",
+		"description": "",
+		"year": null
+	},
+	{
+		"id_image": 2,
+		"url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Escudo_de_Racing_Club.svg",
+		"alt": "Escudo de Racing Club",
+		"description": "",
+		"year": null
+	},
+	{
+		"id_image": 3,
+		"url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Escudo_del_Club_Atl%C3%A9tico_Independiente.svg",
+		"alt": "Escudo del Club Atletico Independiente",
+		"description": "",
+		"year": null
+	},
+	{
+		"id_image": 4,
+		"url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Boca_escudo.png",
+		"alt": "Escudo del Club Atletico Boca Juniors",
+		"description": "",
+		"year": null
+	}
+]

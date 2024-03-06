@@ -1,7 +1,7 @@
 const { DataTypes } = require('sequelize');
 
-const PageImage = (database) => {
-    database.define("PageImage", {
+const HomeImage = (database) => {
+    database.define("HomeImage", {
         id_image: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
@@ -15,21 +15,13 @@ const PageImage = (database) => {
             type: DataTypes.STRING,
             allowNull: false
         },
-        description: {
+        date: {
             type: DataTypes.STRING,
-            allowNull: false
-        },
-        year: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        title:{
-            type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         }
     },{
         timestamps: false
     })
 }
 
-module.exports = PageImage;
+module.exports = HomeImage;

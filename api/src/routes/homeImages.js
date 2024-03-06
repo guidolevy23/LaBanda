@@ -1,10 +1,10 @@
 const { Router } = require('express');
-const {PageImage} = require('../db.js');
+const {HomeImage} = require('../db.js');
 const router = Router();
 
 router.get('/', async (req,res) => {
     try {
-        const images = await PageImage.findAll();
+        const images = await HomeImage.findAll();
         // console.log(images[0].dataValues);
         res.status(200).send(images);
     } catch (error) {
@@ -14,8 +14,8 @@ router.get('/', async (req,res) => {
 
 router.post('/', async (req,res) => {
     try {
-        const {url , alt , description , year , title} = req.body
-        const newImage = await PageImage.create({url , alt , description , year , title})
+        const {url , alt , date} = req.body
+        const newImage = await HomeImage.create({url , alt , date})
         res.status(200).send({newImage , added:true})
     } catch (error) {
         res.status(404).send(error.message)

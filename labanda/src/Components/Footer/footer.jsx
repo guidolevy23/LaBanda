@@ -4,7 +4,7 @@ export default function Footer(){
     return(
         <footer>
                 <div className="foto_info">
-                    <img src="./img/favicon-96x96.png" alt="logo River"/>
+                    <img src="https://www.cariverplate.com.ar/images/favicon-96x96.png" alt="logo River"/>
                     <div className="info">
                         <h3>Guido Levy</h3>
                         <p>Tecnicatura Universitaria en Desarrollo de Software UADE 2023&copy;</p>
