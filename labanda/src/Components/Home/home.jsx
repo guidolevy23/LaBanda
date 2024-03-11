@@ -6,6 +6,7 @@ import Vidriera from "../Vidriera/vidriera";
 import Header from "../Header/header";
 import Newsletter from "../Newsletter/newsletter";
 import {useDispatch} from "react-redux"
+import Post from "./post";
 
 
 export default function Home(){
@@ -17,6 +18,7 @@ export default function Home(){
             <Vidriera {...name}/>
             <Newsletter/>
             <Matches/>
+            <Post/>
             <Footer/>
         </>
     )
