@@ -166,8 +166,16 @@ button:hover{
     transition-duration: 0.3s;
     box-shadow: #0D0D0D 2px 2px 2px 0px;
 }
-.partido .entrada:hover{
+.partido .noEntrada{
+    color: #F2F2F2;
     background-color: #b65050;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    box-shadow: none;
+}
+.partido .entrada:hover{
+    background-color: #945454;
     transition-duration: 0.3s;
     color: #F2F2F2;
     box-shadow: none ;
