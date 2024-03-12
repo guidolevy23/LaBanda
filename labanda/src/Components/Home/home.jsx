@@ -5,12 +5,10 @@ import Footer from "../Footer/footer";
 import Vidriera from "../Vidriera/vidriera";
 import Header from "../Header/header";
 import Newsletter from "../Newsletter/newsletter";
-import {useDispatch} from "react-redux"
 import Post from "./post";
 
 
 export default function Home(){
-    const dispatch = useDispatch();
     const name = {name: "LA BANDA"}
     return(
         <>

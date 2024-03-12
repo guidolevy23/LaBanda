@@ -11,6 +11,10 @@ const UserImages = (database) => {
             type: DataTypes.STRING,
             allowNull: false,
         },
+        url:{
+            type : DataTypes.STRING,
+            allowNull:false
+        },
         user: {
             type: DataTypes.STRING,
             allowNull: false,

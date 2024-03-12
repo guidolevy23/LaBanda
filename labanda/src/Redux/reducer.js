@@ -1,9 +1,10 @@
-import { GET_PAGE_IMAGES , GET_HOME_IMAGES } from "./actions";
+import { GET_PAGE_IMAGES , GET_HOME_IMAGES, POST_USER_IMAGE, GET_USER_IMAGES } from "./actions";
 
 
 const initialState = {
     pageImages:[],
     homeImages:[],
+    userImages:[],
 }
 
 function rootReducer(state = initialState, action){
@@ -17,6 +18,15 @@ function rootReducer(state = initialState, action){
             return{
                 ...state,
                 homeImages: action.payload,
+            }
+        case POST_USER_IMAGE:
+            return{
+                ...state
+            }
+        case GET_USER_IMAGES:
+            return {
+                ...state,
+                userImages: action.payload
             }
         default:
             return{
