@@ -11,7 +11,8 @@ export default function Post(){
     return(
         <div className="post">
             <h2>Subi tu foto en el monumental alentando a La Banda!!!</h2>
-            <img src={userImages[0].url} alt="" />
+            
+            <img src={userImages[0].url} alt="user post" />
             <p>{userImages[0].description}</p>
             <p>{userImages[0].user}</p>
             {/* Aca iria un carrusel de fotos que haya subidas */}
