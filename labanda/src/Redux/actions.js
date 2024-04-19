@@ -4,6 +4,8 @@ export const GET_PAGE_IMAGES = "GET_PAGE_IMAGES";
 export const GET_HOME_IMAGES = "GET_HOME_IMAGES";
 export const GET_USER_IMAGES = "GET_USER_IMAGES";
 export const POST_USER_IMAGE = "POST_USER_IMAGE";
+export const SEND_EMAIL = "SEND_EMAIL";
+export const SEND_CONTACTO = "SEND_CONTACTO";
 
 
 
@@ -28,3 +30,13 @@ export const postUserImages = (data) => dispatch => {
     return axios.post("http://localhost:3001/userimages", data)
     .then(response => dispatch({type: POST_USER_IMAGE , payload: response.data}))
 }
+export const sendEmail = (payload) => dispatch => {
+    console.log(payload)
+    return axios.post("http://localhost:3001/sendemail", {email: payload})
+    .then((data) => dispatch({ type: SEND_EMAIL, payload: data.data }));
+  };
+export const sendContacto = (email , name , phone , text) => dispatch => {
+    console.log("Actios")
+    return axios.post("http://localhost:3001/sendemail/contact", {email , name , phone , text})
+    .then((data) => dispatch({ type: SEND_CONTACTO, payload: data.data }));
+  };

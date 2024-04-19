@@ -103,7 +103,7 @@ header li a:hover , .resaltado{
     color: #F2F2F2;
     text-shadow: 1px 1px 1px #0D0D0D;
 }
-#newsletter form{
+#newsletter .form{
     width: 30%;
     display: flex;
     justify-content: space-around;   

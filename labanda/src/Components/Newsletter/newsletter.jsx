@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { sendEmail } from "../../Redux/actions";
+
 
 export default function Newsletter(){
+    const [email , setEmail] = useState('');
+    const dispatch = useDispatch();
+    const handleOnClick = (e) =>{
+        e.preventDefault()
+        dispatch(sendEmail(email))
+        setEmail('')
+    }
+    const handleEmailChange = (e) =>{
+        e.preventDefault()
+        setEmail(e.target.value)
+    }
     return(
         <section id="newsletter">
             <div id="text">
@@ -8,10 +22,10 @@ export default function Newsletter(){
                 <h4>Para enterarte de todo lo nuevo que pase en el mundo River! </h4>
                 <h4>Rumores de transferencias, remodelaciones, precios, cuotas, venta de entradas y mas!!!</h4>
             </div>
-            <form action="envio.php" method="get">
-                <input type="email" name="correo" placeholder="Tu Email..."/>
-                <button type="submit" className="btn">Suscríbete</button>
-            </form>
+            <div className="form">
+                <input type="email" value={email} onChange={handleEmailChange} name="correo" placeholder="Tu Email..."/>
+                <button onClick={handleOnClick} type="submit" className="btn">Suscríbete</button>
+            </div>
         </section>
     )
 }

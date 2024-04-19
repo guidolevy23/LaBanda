@@ -1,6 +1,48 @@
 import React from "react";
+import { sendContacto } from "../../Redux/actions";
+import { useDispatch } from "react-redux";
+import { useState } from "react";
 
 export default function Form(){
+    const [name, setName] = useState('')
+    const [phone, setPhone] = useState('')
+    const [email, setEmail] = useState('')
+    const [dni, setDni] = useState('')
+    const [text, setText] = useState('')
+    const dispatch = useDispatch()
+    const handleOnClick = (e) => {
+        e.preventDefault()
+        dispatch(sendContacto(email , name , phone , text))
+        setDni('')
+        setEmail('')
+        setName('')
+        setPhone('')
+        setText('')
+    }
+    const handleOnChangeName = (e) => {
+        e.preventDefault()
+        setName(e.target.value)
+        
+    }
+    const handleOnChangeEmail = (e) => {
+        e.preventDefault()
+        setEmail(e.target.value)
+        
+    }
+    const handleOnChangeDni = (e) => {
+        e.preventDefault()
+        setDni(e.target.value)
+    }
+    const handleOnChangePhone = (e) => {
+        e.preventDefault()
+        setPhone(e.target.value)
+        
+    }
+    const handleOnChangeText = (e) => {
+        e.preventDefault()
+        setText(e.target.value)
+        
+    }
     return(
         <section class="formulario">
                 <h3>Contactanos</h3>
@@ -10,36 +52,36 @@ export default function Form(){
                 <p>
                     Si deseas ponerte en contacto con nosotros, por favor completa la siguiente información de contacto:
                 </p>
-                <form action="envio.php" method="post" class="contacto">
+                <form onSubmit={handleOnClick} className="contacto">
                     <div class="renglon">
                         <div class="label">
                             <label for="nombre">Nombre y Apellido</label>
                         </div>
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre completo"/>
+                        <input type="text"  value={name} onChange={handleOnChangeName} name="nombre" id="nombre" placeholder="Nombre completo"/>
                     </div>
                     <div class="renglon">
                         <div class="label">
                             <label for="telefono">Numero de telefono</label>
                         </div>
-                        <input type="text" name="telefono" id="telefono" placeholder="Telefono"/>
+                        <input type="text" value={phone} onChange={handleOnChangePhone} name="telefono" id="telefono" placeholder="Telefono"/>
                     </div>
                     <div class="renglon">
                         <div class="label">
                             <label for="dni">DNI</label>
                         </div>
-                        <input type="text" name="dni" id="dni" placeholder="DNI"/>
+                        <input type="text" value={dni} onChange={handleOnChangeDni} name="dni" id="dni" placeholder="DNI"/>
                     </div>
                     <div class="renglon">
                         <div class="label">
                             <label for="email">Email</label>
                         </div>
-                        <input type="Email" name="email" id="email" placeholder="Email"/>
+                        <input type="Email" value={email} onChange={handleOnChangeEmail} name="email" id="email" placeholder="Email"/>
                     </div>
                     <div class="renglon">
                         <div class="label">
                             <label for="motivo">Motivo</label>
                         </div>
-                        <textarea name="motivo" id="motivo" cols="30" rows="10" placeholder="Escribenos un mensaje"></textarea>
+                        <textarea name="motivo" value={text} onChange={handleOnChangeText} id="motivo" cols="30" rows="10" placeholder="Escribenos un mensaje"></textarea>
                     </div>
                     <button type="submit">Enviar</button>
                 </form>
