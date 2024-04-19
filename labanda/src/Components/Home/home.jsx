@@ -16,7 +16,7 @@ export default function Home(){
             <Vidriera {...name}/>
             <Newsletter/>
             <Matches/>
-            <Post/>
+            {/* <Post/> */}
             <Footer/>
         </>
     )

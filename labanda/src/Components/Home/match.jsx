@@ -35,8 +35,8 @@ export default function Match(){
         return (
             <div className="partido">
                 <div className="equipos">
-                    <img className={elemento.altHome === "Escudo del Club Atletico River Plate" ? "river" : ""} src={elemento.home} alt={elemento.altHome}/>
-                    <img className={elemento.altAway === "Escudo del Club Atletico River Plate" ? "river" : ""} src={elemento.away} alt={elemento.altAway} />
+                    <img className={elemento.altHome === "Escudo del Club Atletico River Plate" ? "river" : "visitante"} src={elemento.home} alt={elemento.altHome}/>
+                    <img className={elemento.altAway === "Escudo del Club Atletico River Plate" ? "river" : "visitante"} src={elemento.away} alt={elemento.altAway} />
                 </div>
                 <p>{elemento.date}</p>
                 <button type="submit"className={elemento.altHome === "Escudo del Club Atletico River Plate" ? "entrada" : "noEntrada"}>{elemento.altHome === "Escudo del Club Atletico River Plate" ? "SACAR ENTRADA" : "NO DISPONIBLE"}</button>

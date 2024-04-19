@@ -1,0 +1,37 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.post{
+    margin: auto;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F24B4B;
+    color: #dee5eb;
+    text-shadow: 1px 1px 1px #0D0D0D;
+
+}
+.post h2{
+    padding-left: 20px;
+    margin: 10px 0 10px 0;
+}
+.slider{
+    align-self: center;
+    width: 90%;
+    height: 500px;
+}
+.slider div img{
+    height: 500px;
+    border: 5px solid #dee5eb;
+    
+}
+
+/* .userPost{
+    margin-top: 10px;
+    height: 500px;
+    align-self: center;
+}
+
+.userPost img{
+    height: 100%;
+} */
